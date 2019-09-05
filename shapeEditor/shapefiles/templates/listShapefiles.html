@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <title>ShapeEditor</title>
+    </head>
+    <body>
+	<div class="container">
+		<h1 class="mt-2">ShapeEditor</h1>
+        <hr class="mt-0 mb-4">
+        {% if shapefiles %}
+        <b>Shapefiles Disponibles:</b>
+        <table border="0" cellspacing="0" cellpadding="5"
+            style="padding-left:20px" class = "mt-2">
+            {% for shapefile in shapefiles %}
+            <tr>
+                <td><font style="font-family:monospace">{{ shapefile.filename }}</font></td>
+                <td>&nbsp;</td>
+                <td>
+                    <a href="/edit/{{ shapefile.id }}">
+                        Editar
+                    </a>
+                </td>
+                <td>&nbsp;</td>
+                <td>
+                    <a href="/export/{{ shapefile.id }}">
+                        Exportar
+                    </a>
+                </td>
+                <td>&nbsp;</td>
+                <td>
+                    <a href="/delete/{{ shapefile.id }}">
+                        Borrar
+                    </a>
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+        {% endif %}
+        <button type="button"
+            onClick='window.location="/import";' 
+			class="btn btn-secondary btn-sm mt-3">
+            Importar Shapefile
+        </button>
+    </div>
+	</body>
+</html>
+

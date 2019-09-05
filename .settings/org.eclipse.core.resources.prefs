@@ -1,0 +1,14 @@
+eclipse.preferences.version=1
+encoding//shapeEditor/shapefiles/apps.py=utf-8
+encoding//shapeEditor/shapefiles/models.py=utf-8
+encoding//shapeEditor/shapefiles/shapefileEditor.py=utf-8
+encoding//shapeEditor/shapefiles/shapefileIO.py=utf-8
+encoding//shapeEditor/shapefiles/views.py=utf-8
+encoding//shapeEditor/shared/admin.py=utf-8
+encoding//shapeEditor/shared/apps.py=utf-8
+encoding//shapeEditor/shared/migrations/0001_initial.py=utf-8
+encoding//shapeEditor/shared/models.py=utf-8
+encoding//shapeEditor/shared/utils.py=utf-8
+encoding//shapeEditor/tms/apps.py=utf-8
+encoding//shapeEditor/tms/models.py=utf-8
+encoding//shapeEditor/tms/views.py=utf-8
