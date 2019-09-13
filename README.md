@@ -1,5 +1,7 @@
 # shapeEditor
 TFM "Aplicación web basada en el framework Django para manejo de datos espaciales".
+Máster en Tecnologías de la Información Geográfica
+Universidad de Alcalá
 
 RESUMEN
 El objetivo de este trabajo es desarrollar una aplicación web utilizando un framework
